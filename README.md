@@ -1,4 +1,4 @@
-# QuantDeck CQRO Institutional Alpha Engine
+# QuantDeck_V2 CQRO Institutional Alpha Engine
 
 <div align="center">
 
