@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #07090E;
+    --bg-secondary: #0E121B;
+    --bg-card: #131825;
+    --bg-card-hover: #192032;
+    --border-color: #1E2638;
+    --border-highlight: #2A3650;
+    
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    
+    --accent-blue: #3B82F6;
+    --accent-blue-glow: rgba(59, 130, 246, 0.18);
+    --accent-cyan: #06B6D4;
+    --accent-emerald: #10B981;
+    --accent-emerald-glow: rgba(16, 185, 129, 0.18);
+    --accent-rose: #F43F5E;
+    --accent-rose-glow: rgba(244, 63, 94, 0.18);
+    --accent-amber: #F59E0B;
+    --accent-purple: #8B5CF6;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Financial Monospace Font */
+.font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+}
+
+/* Sleek Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #080B12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2638;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Glassmorphism & Card Panel Styling */
+.terminal-card {
+  background: linear-gradient(135deg, rgba(19, 24, 37, 0.95) 0%, rgba(14, 18, 27, 0.98) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(12px);
+}
+
+.terminal-card:hover {
+  border-color: var(--border-highlight);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 15px rgba(59, 130, 246, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Glowing Border Variations */
+.glow-card-blue {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+.glow-card-emerald {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.15);
+}
+
+/* Institutional Status Badges */
+.badge-pass {
+  background: rgba(16, 185, 129, 0.12);
+  color: #10B981;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  display: inline-flex;
+  items-center: center;
+  gap: 4px;
+}
+
+.badge-warn {
+  background: rgba(245, 158, 11, 0.12);
+  color: #F59E0B;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  display: inline-flex;
+  items-center: center;
+  gap: 4px;
+}
+
+.badge-fail {
+  background: rgba(244, 63, 94, 0.12);
+  color: #F43F5E;
+  border: 1px solid rgba(244, 63, 94, 0.35);
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  display: inline-flex;
+  items-center: center;
+  gap: 4px;
+}
+
+/* Pulse Animation for Live Telemetry Indicators */
+@keyframes live-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.92);
+  }
+}
+
+.animate-pulse-live {
+  animation: live-pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Custom Table Styling */
+.quant-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.quant-table th {
+  background: #0E121B;
+  color: #94A3B8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 10px 14px;
+  border-bottom: 1px solid #1E2638;
+}
+
+.quant-table td {
+  padding: 12px 14px;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(30, 38, 56, 0.5);
+  transition: background 0.15s ease;
+}
+
+.quant-table tr:hover td {
+  background: rgba(25, 32, 50, 0.6);
+}

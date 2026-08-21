@@ -1,0 +1,77 @@
+# Environments
+.env
+.venv*
+.*_venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+quant_venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.env.*
+
+# Build, Test & Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.benchmarks/
+*.egg-info/
+.gradle/
+android_app/.gradle/
+android_app/build/
+android_app/app/build/
+node_modules/
+.next/
+dist/
+build/
+
+# Data and Artifacts
+data_cache/
+reports/
+research_outputs/
+*.parquet
+*.pkl
+*.csv
+*.db
+*.sqlite3
+
+# PIP
+pip-build-tracker-*/
+pip-ephem-wheel-cache-*/
+pip-install-*/
+
+# Temporary & Diagnostic files
+diagnostic_results.json
+run_output.txt
+test_output.txt
+test_monitoring_output.txt
+test_import.py
+empty_temp/
+corrupted_*
+*_corrupt*
+.git_corrupted_old
+
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs & Dumps
+logs/
+*.log
+current_run_output.txt
+final_results*.txt
+final_validation.txt
+run_log.txt
+run_results_*.txt
+turnover_test_*.txt
+
+

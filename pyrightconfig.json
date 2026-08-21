@@ -1,0 +1,41 @@
+{
+  "pythonVersion": "3.10",
+  "pythonPlatform": "Windows",
+  "typeCheckingMode": "off",
+  "reportMissingImports": "none",
+  "reportMissingModuleSource": "none",
+  "reportMissingTypeStubs": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownParameterType": "none",
+  "reportUnknownArgumentType": "none",
+  "reportUnknownLambdaType": "none",
+  "reportGeneralTypeIssues": "none",
+  "reportOptionalMemberAccess": "none",
+  "reportAttributeAccessIssue": "none",
+  "include": [
+    "."
+  ],
+  "exclude": [
+    ".venv",
+    ".venv2",
+    "quant_venv",
+    ".git",
+    "**/__pycache__",
+    "htmlcov",
+    "android_app",
+    "web_dashboard",
+    "node_modules"
+  ],
+  "extraPaths": [
+    ".",
+    "backend_services",
+    "data_layer",
+    "alpha_layer",
+    "feature_layer",
+    "portfolio_layer",
+    "risk_layer",
+    "execution_layer",
+    "monitoring_layer"
+  ]
+}

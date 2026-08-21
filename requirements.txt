@@ -1,0 +1,27 @@
+numpy>=1.24.0
+pandas>=2.0.0
+yfinance>=0.2.30
+pyarrow>=12.0.0
+xgboost>=1.7.0
+scikit-learn>=1.2.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+streamlit>=1.25.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+httpx>=0.24.0
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-benchmark>=4.0.0
+gunicorn>=21.0.0
+# Optional — install for full feature support
+psutil>=5.9.0                          # CPU/memory monitoring (system_health.py)
+optuna>=3.0.0                          # Hyperparameter tuning (hyperparameter_tuning.py)
+shap>=0.42.0                           # SHAP explainability (explainability.py)
+python-json-logger>=2.0.0             # JSON structured logging (backend_services/logger.py)
+prometheus-fastapi-instrumentator>=6.0.0  # Prometheus metrics (backend_services/app.py)
+locust>=2.15.0                         # Load testing (tests/performance/locustfile.py)
